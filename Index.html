@@ -11,31 +11,44 @@
             text-align: center;
             padding-top: 50px;
         }
+        h1 {
+            color: #555;
+        }
         #counterDisplay {
-            font-size: 3em;
+            font-size: 3.5em; /* फ़ॉन्ट साइज़ बढ़ा दिया */
             color: #333;
-            display: block; /* नए लाइन पर दिखाने के लिए */
-            margin-bottom: 20px;
+            display: block;
+            margin-bottom: 25px;
+            font-weight: bold;
         }
         #clickButton {
-            padding: 15px 30px;
-            font-size: 1.5em;
+            padding: 15px 35px;
+            font-size: 1.6em;
             cursor: pointer;
-            background-color: #4CAF50;
+            background-color: #4CAF50; /* हरा रंग */
             color: white;
             border: none;
             border-radius: 8px;
-            transition: background-color 0.3s;
+            margin: 10px;
         }
-        #clickButton:hover {
-            background-color: #45a049;
+        #resetButton {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #f44336; /* लाल रंग */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        #clickButton:hover, #resetButton:hover {
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
     <h1>काउंटर: <span id="counterDisplay">0</span></h1>
     <button id="clickButton">क्लिक करें</button>
-
-    <script src="script.js"></script>
+    <button id="resetButton">रिसेट (Reset)</button> <script src="script.js"></script>
 </body>
 </html>
